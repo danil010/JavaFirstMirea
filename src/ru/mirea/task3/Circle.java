@@ -10,7 +10,6 @@ public class Circle {
     void reget(int n){
         rcir=n;
     }
-
     int getp(){
         return 2*rcir*3;
     }
@@ -21,8 +20,9 @@ public class Circle {
     {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите радиус");
-        Circle t=null ;
+        Circle t;
         t.reget(sc.nextInt());
+        System.out.println("Вывод");
         t.getRcir();
         t.getp();
         t.gets();
