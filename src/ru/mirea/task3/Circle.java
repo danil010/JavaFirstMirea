@@ -20,11 +20,11 @@ public class Circle {
     {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите радиус");
-        Circle t;
+        Circle t = new Circle();
         t.reget(sc.nextInt());
         System.out.println("Вывод");
-        t.getRcir();
-        t.getp();
-        t.gets();
+        System.out.println(t.getRcir());
+        System.out.println(t.getp());
+        System.out.println(t.gets());
     }
 }
