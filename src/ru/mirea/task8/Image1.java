@@ -14,7 +14,7 @@ public class Image1 {
 
         frame.getContentPane().add(panel);
 
-        frame.setSize(300, 303);
+        frame.setSize(300, 300);
         frame.setVisible(true);
         //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }

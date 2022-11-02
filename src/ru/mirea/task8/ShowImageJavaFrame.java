@@ -18,7 +18,7 @@ public class ShowImageJavaFrame extends JFrame
         // относительно текущей папки загружаем изображение
         // папка с изображением должна находиться в текущей папке программы
         //var icon = new ImageIcon(cwd + "/images/laravel-cover.png");
-        var icon = new ImageIcon(cwd +"\\082915-01.jpg");
+        var icon = new ImageIcon(cwd +"\\product-496868-1.jpg");
         // создаем панель, в панель добавляем заголовок с картинкой
         var panel = new JPanel();
         panel.add(new JLabel(icon));
