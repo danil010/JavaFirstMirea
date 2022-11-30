@@ -62,7 +62,7 @@ public class TextPaneTest extends JFrame {
         JLabel jLabel1, jLabel2;
 
         jLabel1 = new JLabel("Label with Serif Font");
-        jLabel2 = new JLabel("Label with Arial Font");
+        jLabel2 = new JLabel("1Label with Arial Font");
 
         Font myFont1 = new Font("Papyrus", Font.BOLD, 12);
         jLabel1.setFont(myFont1);
