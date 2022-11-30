@@ -12,13 +12,11 @@ import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyleContext;
 
-public class TextPaneTest extends JFrame
-{
+public class TextPaneTest extends JFrame {
     private JPanel topPanel;
     private JTextPane tPane;
 
-    public TextPaneTest()
-    {
+    public TextPaneTest() {
         topPanel = new JPanel();
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -45,8 +43,7 @@ public class TextPaneTest extends JFrame
         setVisible(true);
     }
 
-    private void appendToPane(JTextPane tp, String msg, Color c)
-    {
+    private void appendToPane(JTextPane tp, String msg, Color c) {
         StyleContext sc = StyleContext.getDefaultStyleContext();
         AttributeSet aset = sc.addAttribute(SimpleAttributeSet.EMPTY, StyleConstants.Foreground, c);
 
@@ -59,14 +56,37 @@ public class TextPaneTest extends JFrame
         tp.replaceSelection(msg);
     }
 
-    public static void main(String... args)
-    {
-        SwingUtilities.invokeLater(new Runnable()
+    public static void main(String... args) {
+
+        JFrame jFrame = new JFrame("Set Font Example");
+        JLabel jLabel1, jLabel2;
+
+        jLabel1 = new JLabel("Label with Serif Font");
+        jLabel2 = new JLabel("Label with Arial Font");
+
+        Font myFont1 = new Font("Papyrus", Font.BOLD, 12);
+        jLabel1.setFont(myFont1);
+
+        Font myFont2 = new Font("Arial", Font.BOLD, 12);
+        jLabel2.setFont(myFont2);
+
+        jLabel1.setBounds(80, 100, 120, 30);
+        jLabel2.setBounds(80, 80, 120, 30);
+
+        jFrame.add(jLabel1);
+        jFrame.add(jLabel2);
+        jFrame.setSize(300, 300);
+
+        jFrame.setLayout(null);
+        jFrame.setVisible(true);
+
+       /* SwingUtilities.invokeLater(new Runnable()
         {
             public void run()
             {
                 new TextPaneTest();
             }
         });
+    }*/
     }
 }
